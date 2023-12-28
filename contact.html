@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Horn7x</title>
+    <link rel="stylesheet" href="contact-style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <meta content="Horn7x - Contact Page" property="og:title" />
+    <meta content="Gamedev" property="og:description" />
+    <meta content="https://horn7x.github.io" property="og:url" />
+    <meta content="horn7x.gif" property="og:image" />
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="merch.html">Merch</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1 class="contact-heading">Contact</h1>
+
+    <button class="email-button" onclick="composeGmailEmail()">E-MAIL ME</button>
+
+<script>
+    function composeGmailEmail() {
+        // Check if the device supports opening Gmail app
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/android/i.test(userAgent)) {
+            // Open Gmail app on Android
+            window.location.href = "intent://compose?to=horn7x@gmail.com#Intent;package=com.google.android.gm;end";
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            // Open Gmail app on iOS
+            window.location.href = "googlegmail://co?to=horn7x@gmail.com";
+        } else {
+            // Open Gmail website
+            window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=horn7x@gmail.com";
+        }
+    }
+</script>
+
+    <div class="contact-content">
+        <p>
+            Feel free to connect with me on social media! You can also reach out to me via email.
+        </p>
+        <ul class="social-buttons">
+            <li>
+                <a href="https://youtube.com/@horn7x" target="_blank" class="social-button youtube">
+                    <img src="YouTube.svg" alt="YouTube Icon">
+                    <span>YouTube</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com/horn69x" target="_blank" class="social-button instagram">
+                    <img src="Instagram.svg" alt="Instagram Icon">
+                    <span>Instagram</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tiktok.com/@horn7x" target="_blank" class="social-button tiktok">
+                    <img src="TikTok.svg" alt="TikTok Icon">
+                    <span>TikTok</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/horn7x" target="_blank" class="social-button github">
+                    <img src="Github.svg" alt="GitHub Icon">
+                    <span>GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/horn7x" target="_blank" class="social-button twitter">
+                    <img src="Twitter.svg" alt="Twitter Icon">
+                    <span>Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://discord.gg/H3hPPXY9SQ" target="_blank" class="social-button discord">
+                    <img src="Discord.svg" alt="Discord Icon">
+                    <span>Discord</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://reddit.com/user/horn7x" target="_blank" class="social-button reddit">
+                    <img src="Reddit.svg" alt="Reddit Icon">
+                    <span>Reddit</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <p>Made with 💙 by Horn7x</p>
+    </footer>
+
+</body>
+</html>
