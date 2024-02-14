@@ -28,17 +28,13 @@
 
 <script>
     function composeGmailEmail() {
-        // Check if the device supports opening Gmail app
         var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
         if (/android/i.test(userAgent)) {
-            // Open Gmail app on Android
             window.location.href = "intent://compose?to=horn7x@gmail.com#Intent;package=com.google.android.gm;end";
         } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-            // Open Gmail app on iOS
             window.location.href = "googlegmail://co?to=horn7x@gmail.com";
         } else {
-            // Open Gmail website
             window.location.href = "https://mail.google.com/mail/?view=cm&fs=1&to=horn7x@gmail.com";
         }
     }
