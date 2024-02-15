@@ -1,0 +1,113 @@
+body {
+    background-color: #252525;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+    background-color: transparent;
+}
+
+nav a:hover {
+    background-color: #777;
+    transform: scale(1.1);
+}
+
+nav a:active {
+    transform: scale(0.9);
+}
+
+.contact-heading {
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+}
+
+.email-button {
+    padding: 10px 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.email-button:hover {
+    background-color: #4686a0;
+    transform: scale(1.05);
+}
+
+.email-button:active {
+    transform: scale(0.9);
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #333;
+}
+
+.contact-content p {
+    margin-bottom: 20px;
+}
+
+.social-buttons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-buttons li {
+    margin: 10px;
+}
+
+.social-button {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.social-button img {
+    color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
